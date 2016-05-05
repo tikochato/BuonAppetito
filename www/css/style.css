@@ -1,0 +1,60 @@
+/* Empty. Add your own CSS if you like */
+
+.platillo-image {
+  padding: 0px;
+  text-align: center;
+  max-width: 200px;
+  max-height: 200px;
+  display:block;
+  margin:0 auto 0 auto;
+}
+
+.platilloGrande-image {
+  padding: 0px;
+  text-align: center;
+  max-width: 400px;
+  max-height: 400px;
+  display:block;
+  margin:0 auto 0 auto;
+}
+
+.subtotal{
+  font-weight: bold;
+  text-align: right;
+}
+
+.total{
+  font-weight: bold;
+  text-align: right;
+  background-color: rgba(179, 245, 255, 0.67);
+}
+
+.button-centro{
+  padding: 0px;
+  text-align: center;
+  display:block;
+  margin:0 auto 0 auto;
+}
+
+.item-botones{
+  background-color: #fefcc7;
+}
+
+.tab-cart {
+  color: #399328;
+}
+
+.tab-star {
+  color: #ff9e30;
+}
+
+.bar-rojo{
+  border-color: #FB3E3E;
+  background-color: #f74646;
+  background-image: linear-gradient(0deg, #FB3E3E, #FB3E3E 50%, transparent 50%);
+  color: #FFF;
+}
+
+.bar-rojoTexto{
+  color: #FFF;
+}

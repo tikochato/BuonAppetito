@@ -1,0 +1,41 @@
+<ion-view title="Pedido">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon bar-rojoTexto"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+
+    <ion-list>
+      <ion-item ng-repeat="pedido in pedidos" type="item-text-wrap" href="#">
+        <div class="list">
+          <div class="item item-thumbnail-left">
+            <img src="{{pedido.imagen}}">
+            <h2>{{pedido.nombre}}</h2>
+            <p>Precio: Q{{pedido.precio}}</p>
+            <p>Cantidad: {{pedido.cantidad}}</p>
+          </div>
+          <div class="item item-body">
+            <p class="subtotal">Subtotal: Q{{pedido.precio * pedido.cantidad}}</p>
+          </div>
+        </div>
+      </ion-item>
+
+      <ion-item  class="total">
+        <p>Total: Q{{total}}</p>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col">
+            <button class="button icon-left ion-trash-a button-assertive button-centro" ng-click="borrarPedido()">Borrar Pedido</button>
+          </div>
+          <div class="col">
+
+          </div>
+          <div class="col">
+            <button class="button icon-right ion-chevron-right button-balanced button-centro" ng-click="confirmarPedido()">Confirmar Pedido</button>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

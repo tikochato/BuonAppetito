@@ -1,0 +1,54 @@
+Bebidas Frias
+Bebidas Calientes
+Entradas
+Carnes
+Pastas
+Pollo
+Postres
+
+
+{
+  id:0,
+  nombre: "Fettuccini al pesto",
+  descripcion: "El sabor y aroma concentrado de la albahaca marcan la diferencia, a esta delicia le bastará una sola vueltecita con el tenedor para enredarte en mil sensaciones..",
+  precio: 94.00,
+  clasificacion: "Pastas",
+  imagen: "",
+  tiempo: {"Almuerzo", "Cena"}
+},
+{
+  id:1,
+  nombre: "Fettuccini Alfredo con pollo",
+  descripcion: "La salsa Alfredo resalta el sabor tanto del pollo como de la pasta, haciéndola la salsa ideal para un delicioso Fettuccine.",
+  precio: 90.00,
+  clasificacion: "Pastas",
+  imagen: "",
+  tiempo: {"Almuerzo", "Cena"}
+},
+{
+  id:2,
+  nombre: "Fusilli al pomodoro",
+  descripcion: "Un delicioso plato de fideos con una salsa natural de tomates y ajo.",
+  precio: 84.00,
+  clasificacion: "Pastas",
+  imagen: "",
+  tiempo: {"Almuerzo", "Cena"}
+},
+{
+  id:3,
+  nombre: "Lasagna ala bolognesa",
+  descripcion: "Uno de los platos más famosos de la tradición boloñesa. La textura de la lasaña clásica, crujiente en la superficie y en su interior suave y suculenta..",
+  precio: 86.00,
+  clasificacion: "Pastas",
+  imagen: "",
+  tiempo: {"Almuerzo", "Cena"}
+},
+{
+  id:4,
+  nombre: "Quattro Formaggi Lasagna",
+  descripcion: "Deliciosas láminas de pasta de lasaña con queso mozaarella rallado, ricotta, parmesano y peccorino.",
+  precio: 85.00,
+  clasificacion: "Pastas",
+  imagen: "",
+  tiempo: {"Almuerzo", "Cena"}
+},

@@ -1,0 +1,40 @@
+<ion-view title="Datos para Entrega">
+  <ion-content class="has-header">
+
+    <div class="item item-divider">
+      1. Datos Personales
+    </div>
+    <label class="item item-input">
+      <span class="input-label">Nombre de quien Recibira:</span>
+      <input type="text" placeholder="Nombre" ng-model="usuario.nombreRecibe">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Direccion de Entrega:</span>
+      <input type="text" placeholder="Direccion" ng-model="usuario.direccionEntrega">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Telefono:</span>
+      <input type="tel" placeholder="Telefono" ng-model="usuario.telefonoEntrega">
+    </label>
+    <div class="item item-divider">
+      2. Forma de Pago
+    </div>
+    <ul class="list">
+      <li class="item">
+        <ion-toggle toggle-class="toggle-calm" ng-checked=true>
+          Efectivo
+        </ion-toggle>
+      </li>
+      <li class="item">
+        <ion-toggle toggle-class="toggle-calm" ng-checked=false>
+          Tarjeta
+        </ion-toggle>
+      </li>
+    </ul>
+
+    <br/>
+    <div class="item item-divider">
+      <button class="button icon-left ion-android-checkmark-circle button-balanced button-centro" ng-click="guardarDatosPedido()">Confirmar y Realizar Pedido</button>
+    </div>
+  </ion-content>
+</ion-view>

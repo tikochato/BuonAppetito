@@ -1,0 +1,32 @@
+<ion-view title="Editar Perfil">
+  <ion-content class="has-header">
+
+    <div class="item item-divider">
+      1. Datos Personales
+    </div>
+    <label class="item item-input">
+      <span class="input-label">Nombres:</span>
+      <input type="text" placeholder="Nombre" ng-model="usuario.nombreUsuario">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Direccion:</span>
+      <input type="text" placeholder="Direccion" ng-model="usuario.direccion">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Telefono:</span>
+      <input type="tel" placeholder="Telefono" ng-model="usuario.telefono">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Email:</span>
+      <input type="email" placeholder="Email" ng-model="usuario.correo">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">NIT:</span>
+      <input type="tel" placeholder="NIT" ng-model="usuario.nit">
+    </label>
+    <br/>
+    <div class="item item-divider">
+      <button class="button icon-right ion-chevron-right button-balanced button-centro" ng-click="guardarPerfil()">Guardar Perfil</button>
+    </div>
+  </ion-content>
+</ion-view>

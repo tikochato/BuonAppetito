@@ -1,0 +1,52 @@
+en config
+  <preference name="SplashScreen" value="screen"/>
+  <preference name="SplashScreenDelay" value="3000"/>
+  <preference name="AutoHideSplashScreen" value="false"/>
+  <preference name="android-minSdkVersion" value="14"/>
+  <preference name="android-targetSdkVersion" value="19"/>
+
+cordova plugin add org.apache.cordova.splashscreen
+
+./resources
+  icon.png 192×192 px
+  splash.png 2208×2208 px
+ionic resources
+
+cordova plugin add https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git
+
+
+
+emulator64-x86 -avd Android-5 -qemu -m 2047 -enable-kvm
+adb logcat Cordova DroidGap:D CordovaLog:D *:S
+
+
+nombreUsuario
+nombreRecibe
+direccion
+direccionEntrega
+telefono
+telefonoEntrega
+correo
+nit
+favoritos  id,id,id
+
+pedidosId  id,id,id
+pedidosCant  num,num,num
+total
+
+
+pendientes:
+  buscar productos
+  categorias
+  buscar favoritos
+  eliminar favoritos
+  mostrar avisos favoritos, pedidos, eliminar
+
+Cambiar
+FB3E3E
+
+Menu
+logo restaurante
+
+Acerca
+2 logos

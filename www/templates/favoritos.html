@@ -1,0 +1,36 @@
+<ion-view title="Favoritos">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon bar-rojoTexto"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-ios-search bar-rojoTexto"></button>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+
+    <ion-list>
+      <ion-item ng-repeat="favorito in favoritos" type="item-text-wrap" href="#">
+
+        <div class="list card">
+          <div class="item item-avatar item-divider">
+            <h2>{{favorito.nombre}}</h2>
+            <p>Q{{favorito.precio}}</p>
+          </div>
+
+          <div class="item item-body">
+            <img class="platillo-image" src="{{favorito.imagen}}" ng-click="verProducto(favorito)">
+            <p> {{favorito.descripcion}} </p>
+          </div>
+
+          <div class="item tabs tabs-secondary tabs-icon-left item-botones">
+            <a class="tab-item tab-cart" ng-click="verProducto(favorito)">
+              <i class="icon ion-ios-cart"></i>
+              Añadir a Pedido
+            </a>
+          </div>
+        </div>
+
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

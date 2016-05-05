@@ -1,0 +1,43 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-rojo nav-title-slide-ios7">
+      <ion-nav-back-button class="button icon-left ion-ios7-arrow-back bar-rojo"> Atras</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-rojo">
+      <h1 class="title bar-rojoTexto">Menú</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item nav-clear menu-close href="#/app/productos">
+          <i class="ion-fork"></i>
+          Productos
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/favoritos">
+        <i class="ion-ios-star"></i>
+          Favoritos
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/pedidos">
+        <i class="ion-ios-cart-outline"></i>
+          Pedido
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/perfil">
+          <i class="ion-person"></i>
+          Perfil
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="acercade()">
+        <i class="ion-ios-information-outline"></i>
+          Acerca de...
+        </ion-item>
+        <ion-item nav-clear>
+        <i class=""></i>
+          <img src="img/icon.png" alt="" />
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

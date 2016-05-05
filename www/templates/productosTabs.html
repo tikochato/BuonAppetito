@@ -1,0 +1,84 @@
+
+
+<ion-view title="Productos">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon bar-rojoTexto"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header">
+    <div class="list card">
+      <div class="item item-avatar">
+        <img src="img/comida_medalla.png">
+        <h2>Objetivo Alimenticio</h2>
+        <p>{{objetivo.aFecha}}</p>
+      </div>
+      <div class="item item-body">
+        <p>
+          {{objetivo.aDetalle}}
+        </p>
+      </div>
+      <div class="item">
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Estado:
+          </div>
+          <select id="aEstado">
+            <option selected value="0" class ="ion-sad">No lo hice</option>
+            <option value="1" class ="ion-happy">Completado</option>
+          </select>
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Agregar comentarios del dia" ng-model="objetivo.aComentario">
+        </label>
+        <button class="button padding button-block icon-right ion-checkmark-round button-balanced" ng-click="guardarA()">
+          Guardar
+        </button>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div class="item item-avatar">
+        <img src="img/fisico_medalla.jpg">
+        <h2>Objetivo Fisico</h2>
+        <p>{{objetivo.fFecha}}</p>
+      </div>
+      <div class="item item-body">
+        <p>
+          {{objetivo.fDetalle}}
+        </p>
+      </div>
+      <div class="item">
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Estado:
+          </div>
+          <select id="fEstado">
+            <option selected value="0" class ="ion-sad">No lo hice</option>
+            <option value="1" class ="ion-happy">Completado</option>
+          </select>
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Agregar comentarios del dia" ng-model="objetivo.fComentario">
+        </label>
+        <button class="button padding button-block icon-right ion-checkmark-round button-balanced" ng-click="guardarF()">
+          Guardar
+        </button>
+      </div>
+    </div>
+  </ion-content>
+
+  <ion-tabs class="tabs-positive tabs-icon-only">
+    <ion-tab title="Home" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline">
+      <!-- Tab 1 content -->
+    </ion-tab>
+    <ion-tab title="About" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
+      <!-- Tab 2 content -->
+    </ion-tab>
+    <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline">
+      <!-- Tab 3 content -->
+    </ion-tab>
+  </ion-tabs>
+
+</ion-view>

@@ -1,0 +1,55 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Agregar a Pedido</h1>
+    <div class="buttons">
+      <button class="button button-assertive ion-close-circled" ng-click="closeAgregarProducto()"></button>
+    </div>
+  </div>
+</ion-header-bar>
+<ion-content>
+
+  <div class="list card">
+
+    <div class="item item-avatar item-divider">
+      <h2>{{platillo.nombre}} - Q{{platillo.precio}}</h2>
+    </div>
+
+    <div class="item item-body">
+      <img class = "platilloGrande-image" src="{{platillo.imagen}}">
+    </div>
+
+    <div class="item item-body">
+      <div class="row responsive-sm">
+        <div class="col">
+          <label class="item item-input item-select">
+            <div class="input-label">
+              Cantidad:
+            </div>
+            <select ng-model="cantidad"
+            ng-options="opt as opt.label for opt in options">
+          </select>
+        </label>
+      </div>
+      <div class="col">
+        <p class="subtotal">
+          Subtotal: Q{{platillo.precio*cantidad.value}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="item item-body">
+    <div class="row responsive-sm">
+      <div class="col">
+      </div>
+      <div class="col" align="center">
+        <button class="button icon-left ion-ios-cart button-balanced" ng-click="agregarPedido(platillo.id, cantidad.value)">Añadir</button>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+</div>
+
+</ion-content>
+</ion-modal-view>

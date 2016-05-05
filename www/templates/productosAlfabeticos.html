@@ -1,0 +1,40 @@
+<ion-view title="Productos">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon bar-rojoTexto"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-ios-search bar-rojoTexto"></button>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+
+    <ion-list>
+      <ion-item ng-repeat="platillo in platillos" type="item-text-wrap">
+
+        <div class="list card">
+          <div class="item item-avatar item-divider">
+            <h2>{{platillo.nombre}}</h2>
+            <p>Q{{platillo.precio}}</p>
+          </div>
+
+          <div class="item item-body">
+            <img class="platillo-image" src="{{platillo.imagen}}" ng-click="verProducto(platillo)">
+            <p> {{platillo.descripcion}} </p>
+          </div>
+
+          <div class="item tabs tabs-secondary tabs-icon-left item-botones">
+            <a class="tab-item tab-cart" ng-click="verProducto(platillo)">
+              <i class="icon ion-ios-cart"></i>
+              Añadir a Pedido
+            </a>
+            <a class="tab-item tab-star" ng-click="onTouchCart(platillo.id)">
+              <i class="icon ion-ios-star"></i>
+              Añadir a Favoritos
+            </a>
+          </div>
+        </div>
+
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
